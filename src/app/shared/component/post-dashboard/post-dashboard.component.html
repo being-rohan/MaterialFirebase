@@ -1,0 +1,25 @@
+
+<div class="row">
+    <div class="col-md-12">
+       <div class="text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Addpost 
+                    <button (click)="addpost()" mat-mini-fab>
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </h1>
+               
+            </div>
+        </div>
+        
+       </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6 offset-3 d-flex flex-column-reverse">
+        <app-post-card [postobj]="post" *ngFor="let post of postarr" ></app-post-card>
+    </div>
+</div>
